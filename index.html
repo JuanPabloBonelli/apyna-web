@@ -294,54 +294,69 @@
   <h3 class="w3-center">CONTACTO</h3>
 
   <div class="w3-row-padding w3-section">
-    <!-- Texto y formulario juntos -->
-    <div class="w3-col l6 m12 w3-margin-bottom">
-      <p class="w3-large w3-margin-bottom">
-        ¿Querés saber más sobre el centro o coordinar una entrevista? <br> Completá el formulario y nos pondremos en contacto a la brevedad.
-      </p>
+        <!-- Texto y formulario juntos -->
+        <div class="w3-col l6 m12 w3-margin-bottom">
+            <div style="text-align: center;">
+            <p class="w3-large w3-margin-bottom">
+                ¿Querés saber más sobre el centro o coordinar una entrevista? <br> Completá el formulario y nos pondremos en contacto a la brevedad.
+            </p></div>
 
-      <form id="contactForm" action="https://formsubmit.co/17ecf65af3bada1cb23f6ceb58786b80" method="POST">
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_template" value="table" />
+            <form id="contactForm" action="https://formsubmit.co/17ecf65af3bada1cb23f6ceb58786b80" method="POST">
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
 
-        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="text" name="Name" placeholder="Nombre" required autocomplete="name" />
-          </div>
-          <div class="w3-half">
-            <input class="w3-input w3-border" type="email" name="Email" placeholder="Email" required autocomplete="email" />
-          </div>
+                <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                <div class="w3-half">
+                    <input class="w3-input w3-border" type="text" name="Name" placeholder="Nombre" required autocomplete="name" />
+                </div>
+                <div class="w3-half">
+                    <input class="w3-input w3-border" type="email" name="Email" placeholder="Email" required autocomplete="email" />
+                </div>
+                </div>
+
+                <textarea class="w3-input w3-border" name="Message" placeholder="Mensaje" rows="4" required></textarea>
+
+
+                <button class="w3-button w3-black w3-right w3-section" type="submit">
+                <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+                </button>
+            </form><br><br>
+
+             <!-- Contacto secundario -->
+            <div style="text-align: center; margin-top: 32px;">
+                <p class="w3-large w3-margin-bottom">
+                También podés contactarnos por teléfono o WhatsApp:
+                </p>
+                <div style="display: inline-block; text-align: left;">
+                <p><i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i> +54 11 4574 8911</p>
+                <p><i class="fab fa-whatsapp fa-fw w3-xlarge w3-margin-right"></i> +54 9 11 2503 8627</p>
+                </div>
+            </div>
         </div>
 
-        <input class="w3-input w3-border" type="text" name="Message" placeholder="Mensaje" required autocomplete="off" />
+        <!-- Mapa -->
+        <div class="w3-col l6 m12">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1247.4520711607654!2d-58.29413846875095!3d-34.708467454645906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33208f0071fc3%3A0xed1ad91701655ec7!2sApyna%20Centro%20Educativo%20Terapeutico!5e0!3m2!1ses!2sar!4v1753645128903!5m2!1ses!2sar" 
+            width="100%" 
+            height="350" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            class="w3-round">
+        </iframe>
+        </div><br><br>
 
-        <button class="w3-button w3-black w3-right w3-section" type="submit">
-          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
-        </button>
-      </form><br><br>
-
-        <p class="w3-large w3-margin-top">
-        También podés contactarnos por teléfono o WhatsApp:
+        <div style="text-align: center; margin-top: 32px;">
+        <p class="w3-large w3-margin-bottom">
+            Estamos ubicados en:
         </p>
-        <p class="w3-large">
-        <i class="fa fa-phone fa-fw w3-xlarge w3-margin-right"></i> +54 11 4574 8911<br>
-        <i class="fab fa-whatsapp fa-fw w3-xlarge w3-margin-right"></i> +54 9 11 2503 8627
-        </p>
-    </div>
-
-    <!-- Mapa -->
-    <div class="w3-col l6 m12">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1247.4520711607654!2d-58.29413846875095!3d-34.708467454645906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33208f0071fc3%3A0xed1ad91701655ec7!2sApyna%20Centro%20Educativo%20Terapeutico!5e0!3m2!1ses!2sar!4v1753645128903!5m2!1ses!2sar" 
-        width="100%" 
-        height="350" 
-        style="border:0;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade" 
-        class="w3-round">
-      </iframe>
-    </div>
+        <div style="display: inline-block; text-align: left;">
+            <p><i class="fa fa-map-marker fa-fw w3-xlarge w3-margin-right"></i> Maipú 589, Bernal</p>
+            <p><i class="fas fa-clock fa-fw w3-xlarge w3-margin-right"></i> Lun a Vie, 9 a 16 h</p>
+        </div>
+        </div>
   </div>
 
   <script>
