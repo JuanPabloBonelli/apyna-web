@@ -166,7 +166,30 @@
                 margin-bottom: 20px;
             }
         }
-               
+
+        /* CONTENEDOR FLEX DE LAS TARJETAS */
+        .cards-servicios {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        /* Cada tarjeta ocupa 1/3 en escritorio */
+        .card-col {
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+        }
+
+        /* En móvil ocupan toda la fila */
+        @media (max-width: 768px) {
+            .card-col {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+
+                      
 
         /* Responsivo */
         @media only screen and (max-device-width: 1024px) {
@@ -182,6 +205,22 @@
                 margin-bottom: 20px;
             }
         }
+
+        /* Achicar logo en mobile */
+        @media (max-width: 768px) {
+            .logo-img {
+                width: 240px;   /* Ajustá este valor hasta que quede como te guste */
+            }
+
+            .logo-title {
+                font-size: 2.5rem;
+            }
+
+            .logo-subtitle {
+                font-size: 1.5rem;
+            }
+        }
+
 
     </style>
 </head>
@@ -267,31 +306,29 @@
             <h3 class="w3-center">SERVICIOS</h3>
             <p class="w3-center w3-large">Nuestros principales enfoques de trabajo.</p>
 
-            <div class="w3-row-padding w3-center" style="margin-top:40px; display:flex; flex-wrap:wrap; gap:20px;">
+            <div class="cards-servicios">
 
-                <div class="w3-third" style="flex:1 1 300px;">
+                <div class="card-col">
                     <div class="card-servicio">
                         <i class="fa fa-user w3-xxlarge w3-margin-bottom icono-servicio"></i>
                         <h4><b>Proyecto de trabajo individual</b></h4>
                         <p>
-                            Planes personalizados según las capacidades y necesidades de cada concurrente, 
-                            promoviendo autonomía, calidad de vida e inclusión social.
+                            Planes personalizados según las capacidades y necesidades de cada concurrente, promoviendo autonomía, calidad de vida e inclusión dentro de la comunidad.
                         </p>
                     </div>
                 </div>
 
-                <div class="w3-third" style="flex:1 1 300px;">
+                <div class="card-col">
                     <div class="card-servicio">
                         <i class="fa fa-graduation-cap w3-xxlarge w3-margin-bottom icono-servicio"></i>
-                        <h4><b>Apoyo educativo y psicopedagógico</b></h4>
+                        <h4><b>Apoyo educativo integral</b></h4>
                         <p>
-                            Evaluación y seguimiento de los procesos de aprendizaje. 
-                            Diseño de estrategias didácticas personalizadas.
+                            Evaluación y acompañamiento de los procesos de aprendizaje, con estrategias didácticas adaptadas para potenciar habilidades cognitivas, expresivas y comunicacionales.
                         </p>
                     </div>
                 </div>
 
-                <div class="w3-third" style="flex:1 1 300px;">
+                <div class="card-col">
                     <div class="card-servicio">
                         <i class="fa fa-heart w3-xxlarge w3-margin-bottom icono-servicio"></i>
                         <h4><b>Intervención terapéutica</b></h4>
@@ -340,6 +377,10 @@
     <!-- EQUIPO -->
     <section id="equipo" style="background:var(--color-fondo);" data-aos="fade-up">
         <h3 class="w3-center">EQUIPO</h3>
+        
+        <h4 class="w3-center" style="margin-top:48px;">
+            Equipo Directivo y Coordinación Profesional
+        </h4>
 
         <div class="w3-row-padding w3-center" style="margin-top:32px;">
             <div class="w3-col m4">
@@ -368,6 +409,7 @@
         </div>
 
         <!-- Especialidades -->
+        <h4 class="w3-center" style="margin-top:48px;">Áreas que integran nuestro equipo interdisciplinario</h4>
         <div class="w3-row-padding w3-center" style="margin-top:48px;">
             <div class="w3-col m4"><p><i class="fas fa-brain"></i> Psiquiatría</p></div>
             <div class="w3-col m4"><p><i class="fas fa-user-md"></i> Psicología</p></div>
@@ -388,11 +430,11 @@
 
             <div class="w3-row-padding">
                 <div class="w3-col l6 m12 w3-center">
-                    <p class="w3-center w3-large">¡Estamos para ayudarte!</p>
+                    <p class="w3-center w3-large"><strong>¡Estamos para ayudarte!</strong></p>
                     <p class="w3-large">
                         Para visitarnos o coordinar una entrevista, estamos en 
-                        <strong>Maipú 859, Bernal</strong>.<br>
-                        De Lunes a Viernes, de <strong>9 a 16 h</strong>.
+                        Maipú 859, Bernal.<br>
+                        De Lunes a Viernes, de 9 a 16 h.
                     </p>
 
                     <p class="w3-large">
@@ -405,7 +447,7 @@
                 </div>
 
                 <div class="w3-col l6 m12">
-                    <p class="w3-center w3-large">¿Cómo llegar?</p>
+                    <p class="w3-center w3-large"><strong>¿Cómo llegar?</strong></p>
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4078.489205380276!2d-58.29885021070495!3d-34.70835679318925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33208f0071fc3%3A0xed1ad91701655ec7!2sApyna%20Centro%20Educativo%20Terapeutico!5e1!3m2!1ses-419!2sar!4v1762173895374!5m2!1ses-419!2sar"
                         width="100%" height="350" class="w3-round"
