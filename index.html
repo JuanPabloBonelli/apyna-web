@@ -209,18 +209,39 @@
         /* Achicar logo en mobile */
         @media (max-width: 768px) {
             .logo-img {
-                width: 240px;   /* Ajustá este valor hasta que quede como te guste */
+                width: 200px;   /* Ajustá este valor hasta que quede como te guste */
             }
 
             .logo-title {
-                font-size: 2.5rem;
+                font-size: 2.4rem;
             }
 
             .logo-subtitle {
-                font-size: 1.5rem;
+                font-size: 1.4rem;
             }
         }
 
+        footer .apyna-copy {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--color-primario);
+            margin-bottom: 4px;
+        }
+
+        footer .creditos {
+            font-size: 10px;
+            color: #666;
+            margin-top: 0;
+        }
+
+        footer .creditos a {
+            color: #666;
+            text-decoration: none;
+        }
+
+        footer .creditos a:hover {
+            text-decoration: underline;
+        }
 
     </style>
 </head>
@@ -431,22 +452,27 @@
             <div class="w3-row-padding">
                 <div class="w3-col l6 m12 w3-center">
                     <p class="w3-center w3-large"><strong>¡Estamos para ayudarte!</strong></p>
-                    <p class="w3-large">
-                        Para visitarnos o coordinar una entrevista, estamos en 
-                        Maipú 859, Bernal.<br>
-                        De Lunes a Viernes, de 9 a 16 h.
-                    </p>
+
+                    <div class="w3-hide-medium w3-hide-small" style="height: 35px;"></div>
+
 
                     <p class="w3-large">
-                        También podés contactarte vía:<br>
+                        Medios de comunicación:<br>
                         <a href="tel:+5491145748911" style="text-decoration: none;"><i class="fa fa-phone"></i> +54 9 11 4574 8911</a><br>
                         <a href="https://api.whatsapp.com/send?phone=5491125038627" target="_blank" style="text-decoration: none;">
                             <i class="fab fa-whatsapp"></i> +54 9 11 2503 8627
                         </a>
                     </p>
+
+                    <p class="w3-large">
+                        Para visitarnos o coordinar una entrevista:<br>
+                        <i class="fa fa-map-marker"></i> Maipú 859, Bernal<br>
+                        <i class="far fa-clock"></i> Lunes a Viernes de 9 a 16 h
+                    </p>
+                    
                 </div>
 
-                <div class="w3-col l6 m12">
+                <div class="w3-col l6 m12 w3-center">
                     <p class="w3-center w3-large"><strong>¿Cómo llegar?</strong></p>
                     <iframe 
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4078.489205380276!2d-58.29885021070495!3d-34.70835679318925!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33208f0071fc3%3A0xed1ad91701655ec7!2sApyna%20Centro%20Educativo%20Terapeutico!5e1!3m2!1ses-419!2sar!4v1762173895374!5m2!1ses-419!2sar"
@@ -470,10 +496,11 @@
             </a>
         </div>
 
-        <p class="w3-small">© 2025 APYNA. Todos los derechos reservados.</p>
-        <p class="w3-small">
-        Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        <p class="apyna-copy">© 2025 APYNA.</p>
+        <p class="creditos">
+            Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
         </p>
+
     </footer>
 
     <!-- Scripts -->
